@@ -39,7 +39,7 @@ extension RMUser {
 }
 
 extension RMUser: DomainConvertibleType {
-    func asDomain() -> User {
+    func asDomain() -> Domain.User {
         return User(address: address!.asDomain(),
                     company: company!.asDomain(),
                     email: email,
@@ -51,7 +51,7 @@ extension RMUser: DomainConvertibleType {
     }
 }
 
-extension User: RealmRepresentable {
+extension Domain.User: RealmRepresentable {
     func asRealm() -> RMUser {
         return RMUser.build { object in
             object.uid = uid

@@ -72,10 +72,10 @@ target 'RealmPlatform' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   rx_swift
-  pod 'RxRealm', '~> 1.0.0'
+  pod 'RxRealm'
   pod 'QueryKit'
-  pod 'RealmSwift', '~> 3.15'
-  pod 'Realm', '~> 3.15'
+  pod 'Realm'
+  pod 'RealmSwift'
 
   target 'RealmPlatformTests' do
     inherit! :search_paths
